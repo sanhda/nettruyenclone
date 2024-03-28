@@ -1,0 +1,77 @@
+.history-container {
+    border: 1px solid #dedede;
+    margin-top: 12px;
+}
+
+.history-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.history-title a {
+    font-style: italic;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.history-title a:hover {
+    text-decoration: underline;
+}
+
+.history-row {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.history-items {
+
+}
+
+.history-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    padding: 10px;
+    border-top: 1px solid #dedede;
+    padding-left: 0;
+}
+
+.history-item-info {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+
+.history-comic-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.history-comic-chapter {
+    color: silver;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete-history-item .fa-times {
+    color: black;
+}
+
+.delete-history-item {
+    color: black;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.delete-history-item a:hover i {
+    color: blue;
+}

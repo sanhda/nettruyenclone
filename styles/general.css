@@ -1,0 +1,36 @@
+body {
+    font-family: Tahoma, sans-serif, Helvetica, Arial;;
+    color: #ebebeb;
+    /* The <body> element has a default margin of 8px
+       on all sides. This removes the default margins. */
+    margin: 0;
+
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #ebebeb;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+root {
+    --nominate-index: 0;
+}
+
+h1 {
+    font-size: 20px;
+    color: #2980b9;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 16px;
+    color: #2980b9;
+    font-weight: 400;
+}

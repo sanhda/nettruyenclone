@@ -1,0 +1,153 @@
+.header {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    background-image: url('../images/icons/header-themes.jpg');
+    background-repeat: repeat;
+    background-position-y: top;
+    background-position-x: center;
+    width: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 1000px;
+    margin-bottom: -15px;
+}
+
+.nav-bar-header {
+    display: flex;
+    width: auto;
+}
+
+.header-left {
+    padding-left: 6px;
+    padding-top: 2px;
+}
+
+.logo {
+}
+
+.header-middle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 90px;
+}
+
+@media (max-width: 576px) {
+    .header-middle {
+        display: none;
+    }
+}
+
+.search-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+}
+
+.search-bar-group {
+    display: flex;
+    width: 100%;
+}
+
+.search-bar {
+    padding: 6px 12px;
+    display: inline-block;
+    border: none;
+    border-radius: 0;
+    height: 20px;
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .search-group {
+        width: auto;
+    }
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+.search-button {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    border: none;
+    margin-right: 32px;
+}
+
+.search-button:hover {
+    background-color: #ebebeb;
+}
+
+.search-image {
+    width: 12px;
+    height: 12px;
+    border: none;
+}
+
+.toggle-dark {
+    margin-left: 20px;
+    padding-top: 2px;
+    padding-left: 1px;
+    cursor: pointer;
+}
+
+.toggle-dark-icon {
+    font-size: 26px
+}
+
+.notification {
+    margin-left: 15px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+.login-link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.register-link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    color: white;
+}

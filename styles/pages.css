@@ -1,0 +1,42 @@
+.pages-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages {
+    list-style: none;
+    display: flex;
+    border-radius: 0.25rem;
+}
+
+.pages li {
+    width: 40px;
+    display: list-item;
+    text-align: center;
+    list-style: none;
+}
+
+.pages li:hover {
+    background-color: #ebebeb;
+}
+
+.pages li a {
+    display: block;
+    border-radius: 0;
+    border: 1px solid #dee2e6;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    margin-left: 2px;
+    padding: 0.5rem 0.75rem;
+}
+
+.pages li a:hover {
+    color: darkblue;
+}
+
+.page-active {
+    background-color: #00a5f0;
+    color: white;
+}
