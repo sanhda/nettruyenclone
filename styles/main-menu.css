@@ -1,5 +1,5 @@
 .nav-main-menu {
-    background-color: #e4e4e4;
+    background-color: var(--background-color);
 }
 
 .sticky {
@@ -12,7 +12,7 @@
     padding-left: 15px;
     padding-right: 15px;
     z-index: 1000;
-    background-color: #e4e4e4;
+    background-color: var(--second-background-color);
 }
 
 @media (max-width: 768px) {
@@ -30,12 +30,12 @@
 }
 
 .home-button {
-    background-color: white;
+    background-color: var(--background-color);
     margin-left: 0;
 }
 
 .main-menu li {
-    background-color: #ebebeb;
+    background-color: var(--second-background-color);
     display: inline-block;
     border-right: solid 1px #ddd;
     margin-left: -4px;
@@ -48,7 +48,7 @@
     height: 100%;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: var(--text-color);
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
@@ -73,7 +73,7 @@
     margin-right: auto;
     margin-left: auto;
 
-    background-color: #ebebeb;
+    background-color: var(--second-background-color);
     margin-top: 0;
     display: flex;
     align-items: center;
@@ -82,8 +82,8 @@
 
 .notify_block {
     box-sizing: border-box;
-    background-color: white;
-    border: solid 1px #4080ff;
+    background-color: var(--background-color);
+    border: solid 1px var(--title-color);
     color: #333;
     width: 1030px;
     max-width: 1000px;
@@ -104,7 +104,7 @@
     height: 100%;
     text-align: center;
     width: 35px;
-    background-color: #4080ff;
+    background-color: var(--title-color);
     padding-top: 10px;
     color: white;
 }

@@ -18,13 +18,14 @@
 }
 
 .pages li:hover {
-    background-color: #ebebeb;
+    background-color: var(--background-color);
 }
 
 .pages li a {
     display: block;
     border-radius: 0;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--title-color);
+    color: var(--title-color);
     cursor: pointer;
     text-align: center;
     position: relative;
@@ -37,6 +38,6 @@
 }
 
 .page-active {
-    background-color: #00a5f0;
+    background-color: var(--background-color);
     color: white;
 }

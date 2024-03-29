@@ -8,7 +8,7 @@ body {
     box-sizing: border-box;
     font-weight: 400;
     font-size: 14px;
-    background-color: #ebebeb;
+    background-color: var(--second-background-color);
 }
 
 a {
@@ -19,18 +19,22 @@ a:hover {
     color: blue;
 }
 
-root {
+:root {
     --nominate-index: 0;
+    --text-color: black;
+    --background-color: white;
+    --second-background-color: #ddd;
+    --title-color: blue;
 }
 
 h1 {
     font-size: 20px;
-    color: #2980b9;
+    color: var(--title-color);
     font-weight: 400;
 }
 
 h2 {
     font-size: 16px;
-    color: #2980b9;
+    color: var(--title-color);
     font-weight: 400;
 }

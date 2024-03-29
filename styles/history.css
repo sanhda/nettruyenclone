@@ -36,7 +36,7 @@
     display: grid;
     grid-template-columns: 60px 1fr;
     padding: 10px;
-    border-top: 1px solid #dedede;
+    border-top: 1px solid var(--text-color);
     padding-left: 0;
 }
 
@@ -63,11 +63,11 @@
 }
 
 .delete-history-item .fa-times {
-    color: black;
+    color: var(--text-color);
 }
 
 .delete-history-item {
-    color: black;
+    color: var(--text-color);
     font-style: italic;
     font-size: 13px;
 }

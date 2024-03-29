@@ -1,5 +1,6 @@
 import {addHistoryComic, removeHistoryComic} from "./history.js";
 import {renderAllContents} from "./index.js"
+import {renderHistory} from "./renders/render-history.js";
 
 export class Chapter {
     constructor(id, comicId, number, time, link='') {
@@ -13,7 +14,7 @@ export class Chapter {
 
 export function chapterClicked(event) {
     addHistoryComic(event.target.dataset.comicId, event.target.dataset.chapterId);
-    renderAllContents();
+    renderHistory();
 }
 
 // get target chapter from comic id
@@ -56,5 +57,5 @@ export function getLastChapter(chapters) {
 //delete chapter
 export function chapterDeleted(event) {
     removeHistoryComic(event.target.dataset.comicId);
-    renderAllContents();
+    renderHistory();
 }

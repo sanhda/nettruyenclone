@@ -3,7 +3,7 @@
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    background-color: white;
+    background-color: var(--background-color);
     padding: 10px;
 }
 
@@ -57,7 +57,7 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
     row-gap: 20px;
-    animation: grid 2000ms;
+    transition: grid-template-columns 2s;
 }
 
 @media (max-width: 1200px) {
@@ -107,7 +107,7 @@
     align-items: center;
     margin-left: 0;
     border: none;
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 .comic-image-container {
@@ -126,7 +126,7 @@
 }
 
 .comic-name {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
@@ -149,7 +149,7 @@
 .chapter-name {
     font-size: 13px;
     padding-left: 0;
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 }
 

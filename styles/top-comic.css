@@ -110,7 +110,7 @@
 
 .top-comic-name {
     font-size: 14px;
-    color: black;
+    color: var(--text-color);
 }
 
 .top-comic-chapter-container {
@@ -121,7 +121,7 @@
 
 .top-comic-chapter {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-size: 13px;
 }
 

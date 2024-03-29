@@ -2,8 +2,9 @@ import {renderComics, renderPagesNavigation} from "./renders/render-comics.js";
 import {renderTopComics} from "./renders/render-top-comics.js";
 import {renderNominate} from "./renders/render-nominate.js"
 import {renderHistory} from "./renders/render-history.js";
+import {loadDarkMode, toggleDarkMode} from "./renders/toggle-dark-mode.js";
 
-function myFunction() {
+function stickyMainMenu() {
     // Get the header
     let header = document.querySelector(".nav-main-menu-container");
 
@@ -17,7 +18,7 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 }
-window.myFunction = myFunction
+window.onscroll = function() {stickyMainMenu()};
 
 function getActivePage() {
     const searchParams = new URLSearchParams(window.location.search);
@@ -40,6 +41,10 @@ function changeActivePage(pageIndex) {
     document.querySelector('.page' + (pageIndex+1)).classList.add('page-active')
 }
 
+function addEventListener() {
+    $('.toggle-dark-icon').click(toggleDarkMode);
+}
+
 export function renderAllContents() {
 
     //find active page
@@ -52,6 +57,12 @@ export function renderAllContents() {
     renderComics(pageIndex)
     renderHistory()
     renderTopComics()
+
+    //dark mode
+    loadDarkMode()
+
+    //event listener
+    addEventListener();
 }
 
 renderAllContents();
