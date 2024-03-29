@@ -19,8 +19,8 @@ export function renderTopComics() {
                     <a href="https://www.nettruyenff.com/truyen-tranh/${comic.link}" class="top-comic-name">${comic.name}</a>
                     <div class="top-comic-chapter-container">
                         <a class="top-comic-chapter" 
-                        href="https://www.nettruyenff.com/truyen-tranh/${comic.chapters.reverse()[0].link}">
-                            Chapter ${comic.chapters.reverse()[0].number}</a>
+                        href="https://www.nettruyenff.com/truyen-tranh/${[...comic.chapters].reverse()[0].link}">
+                            Chapter ${[...comic.chapters].reverse()[0].number}</a>
                         <i class="fa fa-eye black-icon"> 22M</i>
                     </div>
                 </div>

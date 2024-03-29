@@ -1,4 +1,5 @@
 import {comics} from "../comics.js";
+import {chapterClicked} from "../chapter.js"
 
 let pageIndex = 0;
 function getChaptersHtml(chapters) {
@@ -6,10 +7,11 @@ function getChaptersHtml(chapters) {
 
     chapters.forEach((chapter)=>{
         html += `<li class="chapter">
-                <a class="chapter-name" href="https://www.nettruyenff.com/truyen-tranh/${chapter.link}">
-                Chapter ${chapter.number}</a>
-                <i class="time chapter-time-black">${chapter.time}</i>
-            </li>`
+                    <a class="chapter-name" href="#"
+                    data-comic-id="${chapter.comicId}" data-chapter-id="${chapter.id}">
+                    Chapter ${chapter.number}</a>
+                    <i class="time chapter-time-black">${chapter.time}</i>
+                </li>`
     })
 
     return html
@@ -17,7 +19,7 @@ function getChaptersHtml(chapters) {
 
 export function renderComics(pageIndex) {
     let itemsHtml = ''
-    comics.splice(pageIndex, 36).forEach((comic)=>{
+    comics.slice(pageIndex*36, 36).forEach((comic)=>{
         let html =
             `<div class="item">
         <div>
@@ -37,7 +39,7 @@ export function renderComics(pageIndex) {
         href="https://www.nettruyenff.com/truyen-tranh/${comic.link}">${comic.name}</a></h3>
 
         <ul class="comic-item">
-            ${getChaptersHtml(comic.chapters.reverse().splice(0, 3))}
+            ${getChaptersHtml([...comic.chapters].reverse().slice(0, 3))}
         </ul>
 
     </div>`
@@ -46,6 +48,8 @@ export function renderComics(pageIndex) {
     })
 
     document.querySelector('.items').innerHTML = itemsHtml;
+
+    addEventForChapters();
 }
 
 export function renderPagesNavigation(pageIndex) {
@@ -55,4 +59,12 @@ export function renderPagesNavigation(pageIndex) {
     }
 
     document.querySelector('.pages').innerHTML = pageHtml;
+}
+
+function addEventForChapters() {
+    document.querySelectorAll('.chapter-name').forEach(
+        (item) => {
+            item.addEventListener('click', chapterClicked);
+        }
+    )
 }

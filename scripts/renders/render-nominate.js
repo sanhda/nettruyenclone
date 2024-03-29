@@ -25,7 +25,7 @@ export function renderNominate() {
         <div class="slide-caption">
             <a style="font-size: 15px" href="">${comic.name}</a>
             <div style="margin-top: 8px" class="slide-caption-chapter">
-                <a style="font-size: 13px" href="${comic.link}">Chapter ${comic.chapters.reverse()[0].number}</a>
+                <a style="font-size: 13px" href="${comic.link}">Chapter ${[...comic.chapters].reverse()[0].number}</a>
                 <i style="font-size: 11px" class="time chapter-time">11 phút trước</i>
             </div>
         </div>

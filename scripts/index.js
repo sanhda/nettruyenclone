@@ -40,7 +40,7 @@ function changeActivePage(pageIndex) {
     document.querySelector('.page' + (pageIndex+1)).classList.add('page-active')
 }
 
-function renderAllContents() {
+export function renderAllContents() {
 
     //find active page
     renderPagesNavigation()
